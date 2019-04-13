@@ -1,0 +1,13 @@
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[user]
+	name = Andy Provan
+	email = AndyProvan@gmail.com
+[core]
+	excludesfile = ~/.gitignore

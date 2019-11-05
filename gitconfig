@@ -11,3 +11,5 @@
 	email = AndyProvan@gmail.com
 [core]
 	excludesfile = ~/.gitignore
+[commit]
+	gpgsign = true

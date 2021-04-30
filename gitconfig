@@ -5,11 +5,19 @@
 	br = branch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-
 [user]
 	name = Andy Provan
-	email = AndyProvan@gmail.com
+	email = git@provan.uk
+	signingkey = 4B39A973498C538C
 [core]
 	excludesfile = ~/.gitignore
 [commit]
 	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[pull]
+	ff = only
+[push]
+	default = current
+[init]
+	defaultBranch = main

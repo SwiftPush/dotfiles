@@ -4,20 +4,27 @@
 	co = checkout
 	br = branch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-    lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 [user]
 	name = Andy Provan
 	email = git@provan.uk
-	signingkey = 4B39A973498C538C
+	signingkey = 1B66F0BCAFABDE8D
+
 [core]
 	excludesfile = ~/.gitignore
-[commit]
-	gpgsign = true
-[gpg]
-	program = /opt/homebrew/bin/gpg
+    pager = delta
+
 [pull]
 	ff = only
+
 [push]
 	default = current
+    autoSetupRemote = true
+
+[commit]
+	gpgsign = true
+
 [init]
 	defaultBranch = main
+
